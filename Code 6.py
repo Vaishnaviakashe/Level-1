@@ -1,3 +1,5 @@
+#Print negative-even or odd or positive- even,odd or zero
+
 n = int(input("Enter number: "))
 
 if n > 0 and n % 2 == 0:

@@ -1,19 +1,18 @@
-#Print negative-even or odd or positive- even,odd or zero
+#Number classification
 
 n = int(input("Enter number: "))
 
-if n > 0 and n % 2 == 0:
-    print("Positive Even")
+n = int(input("Enter number: "))
 
-elif n > 0 and n % 2 != 0:
-    print("Positive Odd")
-    
-elif n < 0 and n % 2 == 0:
-    print("Negative Even")
-    
-elif n < 0 and n % 2 != 0:
-    print("Negative Odd")
-    
-else:
+if n == 0:
     print("Zero")
-    
+elif n > 0:
+    if n % 2 == 0:
+        print("Positive Even")
+    else:
+        print("Positive Odd")
+else:
+    if n % 2 == 0:
+        print("Negative Even")
+    else:
+        print("Negative Odd")
